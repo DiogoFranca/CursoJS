@@ -1,4 +1,4 @@
-/* Como adicionar aspas duplas dentro de aspas duplas */
+/* Como adicionar aspas duplas dentro de aspas duplas */ 
 
 // let umaString = "um \"texto\"" 
 // console.log(umaString);
@@ -43,6 +43,7 @@ let umaString = 'O rato roeu a roupa do rei de roma.';
 //console.log(umaString.length)
 
 // Fatiar uma string
+console.log(umaString.slice())
 // console.log(umaString.slice(2))
 // console.log(umaString.slice(-5, -1)) // -1 = umaString.length - 1
 // console.log(umaString.substring(umaString.length - 5, umaString.length - 1))
