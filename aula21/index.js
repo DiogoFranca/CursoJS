@@ -7,3 +7,8 @@ Operadores de comparação
 === igualdade estrita (valor e tipo) - usa esse.
 !== diferente estrito (valor e tipo) - usa esse.
  */
+
+
+
+
+
