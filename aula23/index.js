@@ -24,8 +24,8 @@ NaN
 
 // OR
 
-// const corUsuario = null;
+// const corUsuario = 1234;
 // const corPadrao = corUsuario || 'preto';
 
-// console.log(corPadrao)
+// console.log(corPadrao);
 
