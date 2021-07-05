@@ -5,7 +5,7 @@
 // const pessoa1 = criaPessoa('Luiz', 'Otávio', 25);
 // const pessoa2 = criaPessoa('Maria', 'Oliveira', 25);
 
-// console.log(pessoa1, pessoa2);
+// console.log(typeof pessoa1, pessoa2);
 
 
 const pessoa1 = {

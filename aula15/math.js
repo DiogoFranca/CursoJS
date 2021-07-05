@@ -1,6 +1,7 @@
 // Arredonda o valor para baixo: Math.floor()
 
-// let num1 = 9.54578
+let num1 = 9;
+
 // let num2 = Math.floor(num1)
 
 // console.log(num2)
@@ -41,10 +42,10 @@
 
 // Pegar a raiz quadrado de um número: duas maneiras
 
-let n = 9;
+// let n = 9;
 
-console.log(n ** (1/2)) // Maneira 1
-console.log(n ** 0.5)  // Maneira 2
+// console.log(n ** (1/2)) // Maneira 1
+// console.log(n ** 0.5)  // Maneira 2
 
 
 
