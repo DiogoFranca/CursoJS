@@ -22,6 +22,7 @@ Referência (mutável) - array, object, function - Passados por referência.
 // let a = [1, 5, 3];
 // let b = a;
 
+// a.unshift('Adicionei');
 // console.log(a, b);
 
 // CÓPIA VALORES POR REFERÊNCIA EM ARRAY.

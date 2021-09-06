@@ -1,39 +1,50 @@
+// const data = new Date(); // Retorna o horário atual mais data
+// console.log(data.toString()); // toString retorna no formato gringo.
+
 // const tresHoras = 60 * 60 * 3 * 1000;
-// const umDia = 60 * 60 * 24 * 1000;
-// const data = new Date(0 + tresHoras + umDia); // 01/01/1970 Timestamp unix ou época unix
+// const umDia = 60 * 60 * 24 * 1000
+// const data = new Date(0 + tresHoras + umDia); // 01/01/1978 Timestamp unix ou época unix == marco zero.
+// console.log(data.toString()); 
 
-// console.log(data.toString()); // data em formato gringo.
-
-// const data = new Date(2002, 13); // a, m, d, h, M, s, ms
-
-// const data = new Date(1625703533983);
-
-// console.log('Dia', data.getDate());
-// console.log('Mês', data.getMonth()); // Mês começa do zero;
-// console.log('Ano', data.getFullYear());
-// console.log('Hora', data.getHours());
-// console.log('Min', data.getMinutes());
-// console.log('Seg', data.getSeconds());
-// console.log('ms', data.getMilliseconds());
-// console.log('Dia da semana', data.getDay()); // 0 - domingo, 6 - Sábado
+// const data = new Date(2002, 2); // a, m, d, h, M, s, ms e 0-11 -> meses
 // console.log(data.toString());
-// console.log(Date.now()); // Hora atual em milésimos de segundo desde o marco 0;
 
-// function zeroAEsquerda (num) {
-//     return num >= 10 ? num : `0${num}`;
-// }
+// const data = new Date('2002-03-13 13:32:23.1000'); // Enviar data em formato string e podemos mandar os milesímos com .valor...
+// console.log(data.toString());
 
-// function formataData(data){
-//     const dia = zeroAEsquerda(data.getDate());
-//     const mes = zeroAEsquerda(data.getMonth() + 1);
-//     const ano = zeroAEsquerda(data.getFullYear());
-//     const hora = zeroAEsquerda(data.getHours());
-//     const min = zeroAEsquerda(data.getMinutes());
-//     const seg = zeroAEsquerda(data.getSeconds());
+const data = new Date('2002-03-13 13:32:23.1000');
 
-//     return `${dia}/${mes}/${ano} ${hora}:${min}:${seg}`;
-// }
+console.log(data.getDate()); // Dia do mês
+console.log(data.getMonth() + 1); // Mês começa do 0, se quer o real adiciona +1
+console.log(data.getFullYear()); 
+console.log(data.getHours()); 
+console.log(data.getMinutes()); 
+console.log(data.getSeconds()); 
+console.log(data.getMilliseconds()); 
+console.log(data.getDay); // Dia da semana. 0 - domingo, 6 - Sábado
+console.log(data.toString());
+console.log(Date.now); // Data em milliseconds desde o marco zero.
 
-// const data = new Date();
-// const dataBrasil = formataData(data);
-// console.log(dataBrasil);
+
+// Aula parou em 22:20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

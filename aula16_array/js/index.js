@@ -1,5 +1,6 @@
 const alunos = ['Luiz', 'Maria', 'João'];
 
+
 // VERIFICAR SE É UM ARRAY
 // console.log(typeof alunos);
 // console.log(alunos instanceof Array)

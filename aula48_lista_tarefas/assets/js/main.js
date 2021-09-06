@@ -61,8 +61,10 @@ function salvarTarefas() {
         listaDeTarefas.push(tarefaTexto);
     }
     
+    console.log(listaDeTarefas);
     // converte um elemento js em string formato JSON.
     const tarefasJSON = JSON.stringify(listaDeTarefas);
+    console.log(tarefasJSON);
     // Adiciona o item no "banco de dados do navegador".
     localStorage.setItem('tarefas', tarefasJSON);
 }

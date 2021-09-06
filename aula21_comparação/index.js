@@ -11,6 +11,3 @@ Operadores de comparação
 
 
 
-
-
-
