@@ -1,12 +1,20 @@
-const nome = 'Luiz';
+// - Exemplo do curso de javascript
 
-function falaNome() {
-    console.log(nome);
-}
+// const nome = 'Luiz';
 
-function usaFalaNome() {
-    const nome = 'Otávio';
-    falaNome();
-}
+// function falaNome() {
+//     console.log(nome);
+// }
 
-usaFalaNome();
+// function usaFalaNome() {
+//     const nome = 'Otávio';
+//     falaNome();
+// }
+// usaFalaNome();
+
+// ---------------------------------------------------
+
+// - Exemplo do canal Roger Melo
+
+// - Escopo léxico existe quando temos funções aninhadas, e elas estão sujeitas a buscar váriaveis no escopo acimas delas. E essa relação acontece de fora para dentro.
+
