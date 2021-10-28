@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    position: relative;
+    top: 160px;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 2.3em;
+    font-family: cursive;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.container #characters {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.container .btn-generate {
+    width: 100px;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif; 
+    box-shadow: 1px 4px 2px rgb(131, 126, 126);
+
+}
+
+.result {
+    margin-top: 50px;
+    font-size: 2em;
+    font-family:fantasy;
+    color:skyblue
+}

@@ -5,13 +5,13 @@
 //     console.log(frutas[index]);
 // }
 
-// const pessoa = {
-//     nome: 'Luiz',
-//     sobrenome: 'Otávio',
-//     idade: 30
-// }
+const pessoa = {
+    nome: 'Luiz',
+    sobrenome: 'Otávio',
+    idade: 30
+}
 
-// for (let chave in pessoa) {
-//     console.log(chave, pessoa[chave]);
-// }
+for (let chave in pessoa) {
+    console.log(chave, pessoa[chave]);
+}
 

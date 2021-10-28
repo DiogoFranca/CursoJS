@@ -36,12 +36,14 @@ function criaPessoa(nome, sobrenome, a, p) {
         get imc() {
             const indice = this.peso / (this.altura ** 2);
             return indice.toFixed(2); 
-        } // imc é um método, porém quando usa get fingi ser um atributo, na programação isso se chama getter, porém não podemos alterar valor como se fosse um atributo de verdade, o get apenas fingi e obtem o valor.
+        }, // imc é um método, porém quando usa get fingi ser um atributo, na programação isso se chama getter, porém não podemos alterar valor como se fosse um atributo de verdade, o get apenas fingi e obtem o valor.
     }
 }
 
 const p1 = criaPessoa('Luiz', 'Otávio', 1.8, 80);
-p1.nomeCompleto = 'Maria Oliveira Silva';
-console.log(p1.nome);
-console.log(p1.sobrenome);
-console.log(p1.fala());
+// p1.nomeCompleto = 'Maria Oliveira Silva';
+// // console.log(p1.nomeCompleto);
+// p1.imc = 0;
+// console.log(p1.imc);
+p1.nomeCompleto = 'Diogo Franca'
+console.log(p1.nomeCompleto);
