@@ -6,13 +6,21 @@ const pessoas = [
   {nome: 'Rosana', idade: 32},
   {nome: 'Wallace', idade: 47}
 ];
- 
-const pessoas2 = pessoas
-  .filter(n => n.nome.length >= 5)
-  .filter(i => i.idade > 50)
-  .filter(l => l.nome.toLowerCase().endsWith('a'))
- 
-console.log(pessoas2);
+
+
+// filter() filtra, passa uma peneira no array original, jogando os valores que passaram na peneira pra outro array.
+
+
+// const nomes = pessoas.map(obj => {
+//   const newObj = {...obj};
+//   delete newObj.idade
+//   return newObj;
+// });
+// console.log(nomes);
+// console.log(pessoas);
+
+// const newPerson = pessoas.filter(valor => valor.idade > 30 && valor.idade <= 50);
+// console.log(newPerson);
 
 
 // Pessoas que tem letra maior ou igual que 5 letras.
@@ -64,15 +72,6 @@ console.log(pessoas2);
 // }
 
 // const numerosFiltrados = numeros.filter(callbackFilter)
-
-
-
-
-
-
-
-
-
 
 // function maiorDez() {
 //   const maiorQueDez = [];
