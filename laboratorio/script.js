@@ -1,9 +1,4 @@
 const obj = {
-  name: 'Diogo',
+  nome: 'diogo',
   age: 19
 }
-
-Object.freeze(obj);
-
-obj.hair = 'preto';
-console.log(obj);

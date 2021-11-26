@@ -5,6 +5,8 @@ function Pessoa(nome, sobrenome) {
   this.nomeCompleto = () => this.nome + ' ' + this.sobrenome;
 }
 
+// A ação da função construtora de criar novos objetos chamamos de instanciação.
+
 Pessoa.prototype.idade = 19;
 
 // Instância
@@ -32,6 +34,9 @@ console.log(pessoa2);
 
 // O motor do javascript faz uma busca por um método ou atributo no objeto original, não encontrando, ele passa para a referência interna que é o __proto__ e assim vai até encontrar ou não.
 
+
+
+// Essa cadeia vai ser por onde o motor do javascript vai fazer a busca.
 // Data -> Date.prototype -> Object.prototype
 
 // Opa, tudo bem? Arrow functions não permitem alteração do this, por isso não funcionam em nenhum local onde o this precisa ser manipulado. O this na arrow function é sempre o this do local onde ela foi criada... 
