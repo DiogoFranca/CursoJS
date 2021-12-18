@@ -7,8 +7,8 @@ const nomes = ['Maria', 'João', 'Eduardo', 'Gabriel', 'Júlia'];
 
 // Number.MAX_VALUE : Esse método que contêm o maior número que se pode ter no javascript, usamos eles no exemplo para pegar todos os elementos após começo for informado.
 
-// const removidos = nomes.splice(1, 3); // Usando valores positivos
-// console.log(nomes, removidos);
+const removidos = nomes.splice(1, 3); // Usando valores positivos
+console.log(nomes, removidos);
 
 // const removidos = nomes.splice(1, 3); // Valores negativos
 // console.log(nomes, removidos);

@@ -1,6 +1,8 @@
 // Quando cria um objeto literal, por baixo dos panos, o javascript faz uma chamada da função construtora, que um new Object, e como toda função construtora, tem atrelada um prototype(Object.prototype). Com isso, automaticamente o objeto litera, tem um propriedade interna que faz referência ao Object.prototype.
 
-// Obs: não utilize o __proto__ dos objetos, prejudica na performace.
+// Obs: não modificar o __proto__ de um objeto, prejudica na performace, por exemplo, __proto__: variável.
+
+// Object.prototype é o pai de todos os objetos.
 
 // Um objeto literal é a mesma coisa do que (new Object).
 

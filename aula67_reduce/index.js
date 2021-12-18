@@ -3,13 +3,15 @@
 
 // O propósito do reduce() é reduzir uma array a único valor.
 
-// const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
+const numeros = [1, 6];
 
-// const total = numeros.reduce((i, valor) => {
-//   i += valor;
-//   return i;
-// }, 0);
-// console.log(total);
+const total = numeros.reduce((i, valor) => {
+  console.log(i);
+  console.log(valor);
+  i += valor;
+  return i;
+}, 0);
+console.log(total);
 
 // Retorne um array com os pares (Filter)
 
