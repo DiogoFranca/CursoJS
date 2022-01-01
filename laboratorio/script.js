@@ -1,20 +1,7 @@
-const personagens = [
-  {per: 5, nome: 'Goku'},
-  {per: 3, nome: 'Naruto'},
-  {per: 1, nome: 'Natsu'},
-  {per: 2, nome: 'Kira'},
-  {per: 4, nome: 'Luffy'}
-];
-
-// const newPersonagens = {};
-// for(let {per, nome} of personagens) {
-//   newPersonagens[per] = {per, nome};
-// }
-
-const newPersonagens = new Map();
-for(let per of personagens.keys()) {
-  newPersonagens.set(per);
-}
-
-console.log(newPersonagens);
-console.log(newPersonagens)
+const obj = new Map();
+const nome = 'diogo'
+obj.set(10, 'Diogo França');
+obj.set('Idade', 19);
+obj.set('Peso', 78);
+obj.delete(2);
+console.log(obj)
