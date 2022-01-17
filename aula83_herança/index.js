@@ -23,6 +23,10 @@ class DispositivoEletronico {
 
     this.ligado = false;
   }
+
+  testando() {
+    console.log('oioiiiiioi');
+  }
 }
 
 // A palavra extends que dizer que vai herdar tudo de Dispositivo eletronico.
@@ -51,7 +55,5 @@ class Tablet extends DispositivoEletronico {
 }
 
 const tablet = new Tablet('Samsung', true);
-tablet.ligar();
-tablet.ligar();
-tablet.falaOi();
-console.log(tablet.ligado);
+tablet.desligar()
+tablet.testando();

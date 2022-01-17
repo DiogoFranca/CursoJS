@@ -17,6 +17,10 @@ class ControleRemoto {
   static soma(x, y) {
     return x + y;
   }
+
+  static mostra() {
+    console.log('oioioi');
+  }
 }
 
 // Métodos estáticos são referentes apenas a class, que só pode ser usado dentro dela.
@@ -28,6 +32,6 @@ class ControleRemoto {
 const controle1 = new ControleRemoto('LG');
 controle1.aumentarVolume();
 controle1.diminuirVolume();
-c
 
 console.log(ControleRemoto.soma(10, 20));
+ControleRemoto.mostra();

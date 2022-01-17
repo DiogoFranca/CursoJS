@@ -1,79 +1,59 @@
-// Callback: funções que são executadas quando uma ação ocorre.
+// callback é um tipo de função que só é executada após o processamento de outra função. 
 
-// Callback nada mais do que uma função que é executada dentro de outra, e geralmente é usada para executar as funções em ordem que achar mais pertinente.
+// Na linguagem JavaScript, quando uma função é passada como um argumento de outra, ela é, então, chamada de callback.
 
-// -------------------------------------------------------------
+// O javascript ele é assíncrono, por exemplo, ele não espera função executar todo seu código se houver uma demora, ele já passa para a próxima função, em seguida, excuta a que pulou. Ai vem os callbaks que server pra controlar o fluxo do javascript assíncrono, colocando a ordem desejada usando os callbaks.
 
-// function f1() {
-//     console.log('f1');
-// }
 
-// function f2() {
-//     console.log('f2');
-// }
 
-// function f3() {
-//     console.log('f3');
-// }
+function rand(min = 1000, max = 3000) {
+  const num = Math.random() * (max - min) + min;
+  return Math.floor(num);
+}
 
-// f1();
-// f2();
-// f3();
-// console.log('Olá mundo!');
+function f1(callback) {
+  setTimeout(function() {
+    console.log('f1');
+    if(callback) callback();
+  }, rand());
+}
 
-// --------------------------------------------------------
-// function rand(min = 1000, max = 3000) {
-//     const num = Math.random() * (max - min) + min;
+function f2(callback) {
+  setTimeout(function() {
+    console.log('f2');
+    if(callback) callback();
+  }, rand());
+}
 
-//     return Math.floor(num);
-// }
+function f3(callback) {
+  setTimeout(function() {
+    console.log('f3');
+    if(callback) callback();
+  }, rand());
+}
 
-// function f1(callback) {
-//     setTimeout(function () {
-//         console.log('f1');
-//         if (callback) callback();
-//     }, rand());
-// }
 
-// function f2(callback) {
-//     setTimeout(function () {
-//         console.log('f2');
-//         if (callback) callback();
-//     }, rand());
-// }
-
-// function f3(callback) {
-//     setTimeout(function () {
-//         console.log('f3');
-//         if (callback) callback();
-//     }, rand());
-// }
-
-// f1(f1callback);
-
-// function f1callback() {
-//     f2(f2callback);
-// }
-
-// function f2callback() {
-//     f3(f3callback);
-// }
-
-// function f3callback() {
-//     console.log('Olá mundo!');
-// }
-
-// ----------------------------------------
 // Callback hell
 
-// f1(function () {
-//     f2(function () {
-//         f3(function () {
-//             console.log('Olá mundo!')
-//         });
-//     });
-// });
+// f1(function() {
+//   f2(function() {
+//     f3(function() {
+//       console.log('Olá mundo!')
+//     })
+//   })
+// })
 
-// Callback é uma função que será executada dentro de outra, no momento que você achar pertinente. Daí o objeto é pra isso mesmo que você descreveu, geralmente para que uma função seja executada após outra função. Esse processo pode continuar quantas vezes você preferir, uma função, que chama outra, que chama outra, etc (isso é chamado de callback hell, e não é algo muito bom)...
+f1(f1Callback);
+
+function f1Callback() {
+  f2(f2Callback);
+}
 
 
+function f2Callback() {
+  f3(f3Callback)
+}
+
+function f3Callback() {
+  console.log('Olá mundo');
+}
